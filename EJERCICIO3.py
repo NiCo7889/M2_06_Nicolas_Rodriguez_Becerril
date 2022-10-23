@@ -1,6 +1,15 @@
-def puntuacion():
-    return sum(clase)/ len(clase)
+def imc():
+    IMC = peso / (altura*altura)
 
-clase = [3, 5, 3, 4]
-media = puntuacion()
-print("La puntuacion de la clese es: ", media)
+    if IMC<18.5:
+        return "Bajo Peso"
+    elif IMC>=18.5 and IMC<=25:
+        return "Peso Saludable"
+    elif IMC>=30:
+        return "Obesidad"
+    return "Sobrepeso"
+    
+print("Vamos a calcular tu índice de masa corporal. ")
+peso = int(input("introduce tu peso en kilogramos: "))
+altura = round(float(input("introduce tu altura: ")), 2)
+print(imc())
