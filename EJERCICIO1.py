@@ -1,11 +1,7 @@
 import math
-def __int__(self, radio):
-    self.radio = radio
-
 def area_circulo():
-    area = math.pi*radio^2
-    print("El área del círculoa con dicho radio es: ", area)
+     Radio = float(input("Dime el radio de un círculo:\n")) 
+     Area = math.pi*(Radio*Radio)
+     return 'El área de un circulo de radio {} es de {} unidades cuadradas.'.format(Radio, Area)
 
-radio1 = int(input("Dime el radio de un círculo: "))
-circ1 = circulo(radio1)
-circ1.area_circulo()
+print (area_circulo())
